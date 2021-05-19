@@ -77,6 +77,7 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
+  let precipitationElement = document.querySelector("#precipitation");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
@@ -111,7 +112,9 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
 
 search("Four Corners");
